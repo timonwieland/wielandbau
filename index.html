@@ -1,22 +1,197 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timon Wieland</title>
-</head>
-<body>
-    <h1>Hallo, ich bin Timon 👋</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Wieland Bau - Zimmerei, Holzbau, Umbau und Handwerk mit sauberer Planung und praeziser Ausfuehrung."
+    />
+    <title>Wieland Bau | Zimmerei & Handwerk</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="start">
+      <nav class="nav-wrap" aria-label="Hauptnavigation">
+        <a class="brand" href="#start" aria-label="Wieland Bau Startseite">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">Wieland Bau</span>
+          <span class="brand-subline">Zimmerei & Holzbau</span>
+        </a>
 
-    <p>Willkommen auf meiner Website.</p>
+        <button class="nav-toggle" type="button" aria-controls="main-menu" aria-expanded="false" aria-label="Menue oeffnen">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-    <h2>Über mich</h2>
-    <p>IT Consultant bei avega IT AG.</p>
+        <div class="nav-links" id="main-menu">
+          <a href="#leistungen">Leistungen</a>
+          <a href="#ueber-uns">Ueber uns</a>
+          <a href="#projekte">Projekte</a>
+          <a href="#kontakt">Kontakt</a>
+        </div>
 
-    <h2>Links</h2>
-    <ul>
-        <li><a href="https://github.com/DEIN_USERNAME">GitHub</a></li>
-        <li><a href="https://www.linkedin.com">LinkedIn</a></li>
-    </ul>
-</body>
+        <a class="header-phone" href="tel:+41000000000">+41 00 000 00 00</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">Holzbau · Umbau · Innenausbau</p>
+          <h1 id="hero-title">Handwerk, das solide gebaut ist.</h1>
+          <div class="hero-rule" aria-hidden="true"></div>
+          <p class="hero-copy">
+            Wieland Bau verbindet traditionelle Zimmermannsarbeit mit sauberer Planung,
+            verlaesslichen Ablaeufen und einem Auge fuer jedes Detail.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#kontakt">Projekt anfragen</a>
+            <a class="button button-outline" href="#leistungen">Leistungen ansehen</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-band" aria-label="Kurzprofil">
+        <div class="intro-grid">
+          <div>
+            <span class="small-label">Wieland Bau</span>
+            <h2>Zimmerei mit ruhiger Hand und klarer Linie.</h2>
+          </div>
+          <p>
+            Von der Dachkonstruktion bis zum individuellen Innenausbau: Wir planen
+            pragmatisch, arbeiten praezise und bleiben bis zur letzten Schraube dran.
+          </p>
+        </div>
+      </section>
+
+      <section class="section services" id="leistungen" aria-labelledby="services-title">
+        <div class="section-heading">
+          <span class="small-label">Leistungen</span>
+          <h2 id="services-title">Alles, was Holz am Bau stark macht.</h2>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="service-number">01</span>
+            <h3>Holzbau & Dachstuhl</h3>
+            <p>
+              Tragwerke, Dachkonstruktionen, Aufstockungen und Sanierungen mit
+              sauberer Statik und langlebiger Ausfuehrung.
+            </p>
+          </article>
+          <article class="service-card">
+            <span class="service-number">02</span>
+            <h3>Umbau & Renovation</h3>
+            <p>
+              Praezise Umbauten im Bestand, abgestimmt auf Terminplan,
+              Baustellenlogistik und die Menschen, die darin wohnen.
+            </p>
+          </article>
+          <article class="service-card">
+            <span class="service-number">03</span>
+            <h3>Innenausbau</h3>
+            <p>
+              Massgenaue Wandverkleidungen, Decken, Boeden, Einbauten und
+              Holzdetails, die Raeume spuerbar waermer machen.
+            </p>
+          </article>
+          <article class="service-card">
+            <span class="service-number">04</span>
+            <h3>Reparatur & Unterhalt</h3>
+            <p>
+              Schnelle Hilfe bei Schaeden, Nachbesserungen, Abdichtungen und
+              konstruktiven Details rund ums Haus.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="split-section" id="ueber-uns" aria-labelledby="about-title">
+        <div class="split-image" role="img" aria-label="Zimmermann bei der Arbeit mit Holzbalken"></div>
+        <div class="split-copy">
+          <span class="small-label">Ueber uns</span>
+          <h2 id="about-title">Direkt, ehrlich und handwerklich sauber.</h2>
+          <p>
+            Gute Bauarbeit entsteht nicht durch laute Versprechen, sondern durch
+            Erfahrung, Materialverstand und verlaessliche Kommunikation. Genau so
+            geht Wieland Bau an jedes Projekt heran.
+          </p>
+          <ul class="check-list">
+            <li>Persoenliche Beratung vor Ort</li>
+            <li>Nachvollziehbare Offerten und klare Termine</li>
+            <li>Saubere Baustelle, saubere Uebergabe</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section projects" id="projekte" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <span class="small-label">Projekte</span>
+          <h2 id="projects-title">Arbeit, die man sieht und lange spuert.</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-text">
+              <span>Privathaus</span>
+              <h3>Dachsanierung mit neuer Holzstruktur</h3>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-text">
+              <span>Wohnraum</span>
+              <h3>Innenausbau mit massgefertigten Holzdetails</h3>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-text">
+              <span>Bestand</span>
+              <h3>Umbau und Reparaturen im laufenden Betrieb</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="kontakt" aria-labelledby="contact-title">
+        <div class="contact-copy">
+          <span class="small-label">Kontakt</span>
+          <h2 id="contact-title">Erzaehlen Sie uns von Ihrem Bauvorhaben.</h2>
+          <p>
+            Ob kleine Reparatur oder groesserer Holzbau: Wir melden uns zeitnah
+            und klaeren gemeinsam den naechsten sinnvollen Schritt.
+          </p>
+          <div class="contact-lines">
+            <a href="tel:+41000000000">+41 00 000 00 00</a>
+            <a href="mailto:info@wieland-bau.ch">info@wieland-bau.ch</a>
+          </div>
+        </div>
+
+        <form class="contact-form" action="#" method="post">
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+          <label>
+            Telefon oder E-Mail
+            <input type="text" name="contact" autocomplete="email" required />
+          </label>
+          <label>
+            Nachricht
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="button button-primary" type="submit">Anfrage senden</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Wieland Bau. Zimmerei & Handwerk.</p>
+      <a href="#start">Nach oben</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
