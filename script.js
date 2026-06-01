@@ -12,14 +12,14 @@ if (navToggle && navLinks) {
   navToggle.addEventListener("click", () => {
     const isOpen = navLinks.classList.toggle("is-open");
     navToggle.setAttribute("aria-expanded", String(isOpen));
-    navToggle.setAttribute("aria-label", isOpen ? "Menue schliessen" : "Menue oeffnen");
+    navToggle.setAttribute("aria-label", isOpen ? "Menü schliessen" : "Menü öffnen");
   });
 
   navLinks.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       navLinks.classList.remove("is-open");
       navToggle.setAttribute("aria-expanded", "false");
-      navToggle.setAttribute("aria-label", "Menue oeffnen");
+      navToggle.setAttribute("aria-label", "Menü öffnen");
     });
   });
 }

@@ -1,15 +1,15 @@
 :root {
-  --ink: #231713;
-  --brown: #4a2d21;
-  --brown-deep: #301b14;
-  --copper: #d98653;
-  --copper-dark: #b8663e;
+  --ink: #171625;
+  --brown: #181352;
+  --brown-deep: #0f0c36;
+  --copper: #181352;
+  --copper-dark: #0a0829;
   --cream: #f7f3ed;
   --paper: #fffdf9;
-  --muted: #756861;
-  --green: #31473a;
-  --line: rgba(74, 45, 33, 0.16);
-  --shadow: 0 24px 60px rgba(35, 23, 19, 0.16);
+  --muted: #666176;
+  --green: #181352;
+  --line: rgba(24, 19, 82, 0.16);
+  --shadow: 0 24px 60px rgba(15, 12, 54, 0.16);
   --header-height: 104px;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--ink);
@@ -66,41 +66,26 @@ textarea {
 
 .brand {
   grid-column: 2;
-  display: grid;
-  justify-items: center;
-  gap: 4px;
-  min-width: 185px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-width: 220px;
   text-transform: uppercase;
   letter-spacing: 0;
 }
 
-.brand-mark {
-  width: 54px;
-  height: 28px;
-  position: relative;
-  display: block;
+.brand-logo {
+  width: 58px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 4px;
+  background: #fff;
 }
 
-.brand-mark::before,
-.brand-mark::after {
-  content: "";
-  position: absolute;
-  bottom: 5px;
-  left: 7px;
-  width: 38px;
-  height: 3px;
-  background: #fffaf4;
-  transform-origin: left center;
-  border-radius: 999px;
-}
-
-.brand-mark::before {
-  transform: rotate(-32deg);
-}
-
-.brand-mark::after {
-  left: 20px;
-  transform: rotate(32deg);
+.brand-copy {
+  display: grid;
+  gap: 3px;
 }
 
 .brand-text {
@@ -166,8 +151,8 @@ textarea {
   min-height: calc(100svh - var(--header-height) - 56px);
   max-height: 760px;
   background:
-    linear-gradient(90deg, rgba(29, 17, 13, 0.92) 0%, rgba(45, 27, 20, 0.77) 38%, rgba(45, 27, 20, 0.34) 68%, rgba(45, 27, 20, 0.46) 100%),
-    url("assets/wieland-bau-hero.png") center right / cover no-repeat;
+    linear-gradient(90deg, rgba(8, 7, 32, 0.94) 0%, rgba(24, 19, 82, 0.8) 42%, rgba(24, 19, 82, 0.38) 72%, rgba(24, 19, 82, 0.52) 100%),
+    url("assets/janis-wieland.jpg") 68% 38% / cover no-repeat;
   color: #fffaf4;
   display: flex;
   align-items: center;
@@ -347,8 +332,8 @@ textarea {
 .split-image {
   min-height: 520px;
   background:
-    linear-gradient(rgba(49, 71, 58, 0.1), rgba(49, 71, 58, 0.1)),
-    url("assets/wieland-bau-hero.png") center right / cover no-repeat;
+    linear-gradient(rgba(24, 19, 82, 0.12), rgba(24, 19, 82, 0.12)),
+    url("assets/janis-wieland.jpg") 66% 40% / cover no-repeat;
 }
 
 .split-copy {
@@ -401,8 +386,8 @@ textarea {
   padding: 26px;
   color: #fffaf4;
   background:
-    linear-gradient(180deg, rgba(35, 23, 19, 0.1) 0%, rgba(35, 23, 19, 0.84) 100%),
-    url("assets/wieland-bau-hero.png") center / cover no-repeat;
+    linear-gradient(180deg, rgba(15, 12, 54, 0.1) 0%, rgba(15, 12, 54, 0.86) 100%),
+    url("assets/janis-wieland.jpg") center / cover no-repeat;
   overflow: hidden;
 }
 
@@ -481,7 +466,7 @@ textarea {
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  border: 1px solid rgba(74, 45, 33, 0.22);
+  border: 1px solid rgba(24, 19, 82, 0.22);
   border-radius: 3px;
   padding: 13px 14px;
   background: #fff;
@@ -493,7 +478,7 @@ textarea {
 .contact-form input:focus,
 .contact-form textarea:focus {
   border-color: var(--copper);
-  box-shadow: 0 0 0 3px rgba(217, 134, 83, 0.16);
+  box-shadow: 0 0 0 3px rgba(24, 19, 82, 0.16);
 }
 
 .contact-form .button {
@@ -510,7 +495,7 @@ textarea {
 .site-footer {
   min-height: 86px;
   padding: 0 max(24px, calc((100vw - 1180px) / 2));
-  background: #21140f;
+  background: #090722;
   color: rgba(255, 250, 244, 0.76);
   display: flex;
   justify-content: space-between;
@@ -536,12 +521,12 @@ textarea {
   .brand {
     grid-column: 1;
     justify-self: start;
-    justify-items: start;
     min-width: 0;
   }
 
-  .brand-mark {
-    display: none;
+  .brand-logo {
+    width: 48px;
+    height: 36px;
   }
 
   .nav-toggle {
@@ -575,8 +560,8 @@ textarea {
   .hero {
     min-height: calc(100svh - var(--header-height) - 110px);
     background:
-      linear-gradient(90deg, rgba(29, 17, 13, 0.94) 0%, rgba(45, 27, 20, 0.82) 48%, rgba(45, 27, 20, 0.38) 100%),
-      url("assets/wieland-bau-hero.png") center right / cover no-repeat;
+      linear-gradient(90deg, rgba(8, 7, 32, 0.95) 0%, rgba(24, 19, 82, 0.84) 48%, rgba(24, 19, 82, 0.42) 100%),
+      url("assets/janis-wieland.jpg") 70% 40% / cover no-repeat;
   }
 
   .hero-content,
@@ -636,7 +621,7 @@ textarea {
   }
 
   .brand-text {
-    font-size: 0.98rem;
+    font-size: 0.96rem;
   }
 
   .brand-subline {
@@ -645,8 +630,8 @@ textarea {
 
   .hero {
     background:
-      linear-gradient(90deg, rgba(29, 17, 13, 0.96) 0%, rgba(45, 27, 20, 0.86) 58%, rgba(45, 27, 20, 0.58) 100%),
-      url("assets/wieland-bau-hero.png") 64% center / cover no-repeat;
+      linear-gradient(90deg, rgba(8, 7, 32, 0.96) 0%, rgba(24, 19, 82, 0.88) 58%, rgba(24, 19, 82, 0.62) 100%),
+      url("assets/janis-wieland.jpg") 70% 42% / cover no-repeat;
   }
 
   .hero h1 {
