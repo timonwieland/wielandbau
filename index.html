@@ -29,20 +29,20 @@
 
         <div class="nav-links" id="main-menu">
           <a href="#leistungen">Leistungen</a>
-          <a href="#ueber-uns">Über uns</a>
+          <a href="#ueber-uns">Über mich</a>
           <a href="#projekte">Projekte</a>
           <a href="#kontakt">Kontakt</a>
         </div>
 
-        <a class="header-phone" href="tel:+41000000000">+41 00 000 00 00</a>
+        <a class="header-phone" href="tel:+41788297577">+41 78 829 75 77</a>
       </nav>
     </header>
 
     <main>
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-content">
-          <p class="eyebrow">Selbständig im Holzbau & Handwerk</p>
-          <h1 id="hero-title">Janis Wieland.</h1>
+          <p class="eyebrow">Janis Wieland</p>
+          <h1 id="hero-title">Holzbau & Handwerk</h1>
           <div class="hero-rule" aria-hidden="true"></div>
           <p class="hero-copy">
             Schwerpunkt Holzbau, offen für alles, was auf der Baustelle sauber
@@ -167,8 +167,18 @@
             was gebraucht wird, und wir klären gemeinsam den nächsten Schritt.
           </p>
           <div class="contact-lines">
-            <a href="tel:+41000000000">+41 00 000 00 00</a>
-            <a href="mailto:info@wieland-bau.ch">info@wieland-bau.ch</a>
+            <a href="tel:+41788297577">+41 78 829 75 77</a>
+            <a id="contact-link">info@wieland-bau.ch</a>
+
+<script>
+
+const contact = document.getElementById("contact-link");
+
+const email = ["info", "wielandbau.ch"].join("@");
+
+contact.href = "mailto:" + email;
+
+</script>
           </div>
         </div>
 
