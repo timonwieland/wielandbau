@@ -34,7 +34,7 @@ a {
   grid-template-rows: auto 1fr auto;
   min-height: 100svh;
   overflow: hidden;
-  background: var(--navy-deep) url("assets/janis-wieland.jpg") center 44% / cover no-repeat;
+  background: var(--navy-deep) url("assets/janis-wieland.jpg") center top / cover no-repeat;
 }
 
 .maintenance-page__backdrop {
@@ -208,7 +208,7 @@ h1 {
 
 @media (max-width: 720px) {
   .maintenance-page {
-    background-position: 63% center;
+    background-position: 63% top;
   }
 
   .maintenance-page__backdrop {
